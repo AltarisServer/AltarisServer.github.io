@@ -19,9 +19,12 @@
 
 <html lang="ru">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>ALTARIS — Мир без вайпов</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ALTARIS — Мир без вайпов</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
 
 <script src="https://cdn.tailwindcss.com"></script>
 
