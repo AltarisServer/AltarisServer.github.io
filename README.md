@@ -24,6 +24,44 @@ body{background:var(--page);color:var(--text);font-family:Inter,sans-serif}
 .press:hover{transform:translate(2px,2px);box-shadow:none;transition:.08s}
 </style>
 </head>
+<script>
+  // Открытие lightbox при клике или Enter
+  function openLightbox(src){
+    const lb = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lb.classList.remove('hidden');
+    lb.classList.add('flex');
+    // для доступности — фокус на изображение
+    setTimeout(()=> img.focus?.(), 50);
+  }
+
+  function closeLightbox(){
+    const lb = document.getElementById('lightbox');
+    if(!lb) return;
+    lb.classList.add('hidden');
+    lb.classList.remove('flex');
+    const lbimg = document.getElementById('lightbox-img');
+    if(lbimg) lbimg.src = "";
+  }
+
+  // Навешиваем обработчики на все картинки в галерее
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('#gallery img[data-src]').forEach(img => {
+      img.addEventListener('click', (e) => openLightbox(e.currentTarget.dataset.src));
+      img.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(e.currentTarget.dataset.src); }
+      });
+    });
+
+    // Закрыть по Esc
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closeLightbox();
+    });
+  });
+</script>
+
+
 
 <body>
 
