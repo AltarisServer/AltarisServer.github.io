@@ -1,9 +1,8 @@
 <html lang="ru">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>ALTARIS — Мир без вайпов</title>
-  <link rel="icon" type="image/png" href="images/ms-icon-310x310.png">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ALTARIS — Мир без вайпов</title>
 <script src="https://cdn.tailwindcss.com"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,7 +80,6 @@ body{background:var(--page);color:var(--text);font-family:Inter,sans-serif}
     </div>
 
   </div>
-</header>
 
 
  <!-- ИКОНКИ САЙТА -->
