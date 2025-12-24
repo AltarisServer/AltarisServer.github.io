@@ -242,7 +242,7 @@ body{background:var(--page);color:var(--text);font-family:Inter,sans-serif}
     </div>
 
     <div class="aspect-video bg-[var(--surface2)] border-2 border-black rounded-2xl shadow-pop overflow-hidden">
-      <img src="images/11.jpg" alt="Скриншот 12" class="w-full h-full object-cover cursor-pointer" tabindex="0" data-src="images/11.jpg">
+      <img src="images/12.jpg" alt="Скриншот 12" class="w-full h-full object-cover cursor-pointer" tabindex="0" data-src="images/11.jpg">
     </div>
   </div>
 
