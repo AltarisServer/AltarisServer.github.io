@@ -70,7 +70,7 @@ body{background:var(--page);color:var(--text);font-family:Inter,sans-serif}
   <div class="flex items-center gap-3 bg-[var(--surface)] border-2 border-black rounded-2xl shadow-pop p-3">
 
     <img 
-      src="images/ms-icon-310x310.png.png"
+      src="images/apple-icon-120x120.png"
       alt="ALTARIS"
       class="w-10 h-10 border-2 border-black rounded-xl object-cover"
     />
