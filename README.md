@@ -4,9 +4,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>ALTARIS — Мир без вайпов</title>
   <link rel="icon" type="image/png" href="images/ms-icon-310x310.png">
-
-
-
 <script src="https://cdn.tailwindcss.com"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,12 +68,22 @@ body{background:var(--page);color:var(--text);font-family:Inter,sans-serif}
 <!-- HEADER -->
 <header class="max-w-6xl mx-auto p-4 flex justify-between items-center border-b-4 border-black">
   <div class="flex items-center gap-3 bg-[var(--surface)] border-2 border-black rounded-2xl shadow-pop p-3">
-    <div class="w-10 h-10 bg-[var(--brand)] border-2 border-black rounded-xl flex items-center justify-center text-black font-extrabold">A</div>
+
+    <img 
+      src="images/ms-icon-310x310.png.png"
+      alt="ALTARIS"
+      class="w-10 h-10 border-2 border-black rounded-xl object-cover"
+    />
+
     <div>
-      <div class="text-xl font-bold lowercase">altaris</div>
-      <div class="text-sm opacity-80">мир без вайпов</div>
+      <div class="text-xl font-bold lowercase">Altaris</div>
+      <div class="text-sm opacity-80">Мир без вайпов</div>
     </div>
+
   </div>
+</header>
+
+
  <!-- ИКОНКИ САЙТА -->
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
