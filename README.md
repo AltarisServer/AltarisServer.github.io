@@ -575,7 +575,7 @@
                 <div class="rule-block"><h3>3. Гриферство</h3><ul class="rule-list"><li>Ломать/воровать без разрешения — запрещено.</li><li><span class="punish">Первое: бан 3д, повтор: 7д</span></li></ul></div>
                 <div class="rule-block"><h3>4. Общение в чате</h3><ul class="rule-list"><li>Спам, капс, политические холивары — мут от 1ч.</li></ul></div>
                 <div class="rule-block"><h3>5. Постройки</h3><ul class="rule-list"><li>Не портить мир: столбы из грязи, открытая лава, оскорбительные постройки — запрещены.</li><li>Оптимизируй фермы, не строй близко к чужим базам (мин. 200 блоков).</li></ul></div>
-                <div class="rule-block"><h3>6. Администрация</h3><ul class="rule-list"><li>Админы: Тёма Тема, Артур, ч, имп хй.</li><li>Не просить предметы/права, не выдавать себя за админа.</li></ul></div>
+                <div class="rule-block"><h3>6. Администрация</h3><ul class="rule-list"><li>Админы: Тёма Тема, Gyrt46, Vasilek, Imperix.</li><li>Не просить предметы/права, не выдавать себя за админа.</li></ul></div>
                 <div class="rule-block"><h3>7. Возраст</h3><ul class="rule-list"><li>Контент 18+ запрещён. Рекомендуемый возраст 16+.</li><li><span class="punish">бан от 7д, повторно — вечный</span></li></ul></div>
             </div>
             <div class="rule-block" style="margin-top:1rem;">
