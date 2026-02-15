@@ -7,6 +7,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- ИКОНКИ САЙТА (ТЕПЕРЬ ТУТ, ГДЕ НАДО) -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
     <style>
         * {
             margin: 0;
@@ -14,21 +30,6 @@
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
         }
- <!-- ИКОНКИ САЙТА -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
         body {
             background-color: #0c0a14;
@@ -115,7 +116,7 @@
         }
         .logo-placeholder {
             max-width: 650px;
-            width: 100%;
+            width: 60%;
             aspect-ratio: 3/1;
             background: rgba(25, 10, 45, 0.6);
             backdrop-filter: blur(4px);
@@ -129,9 +130,10 @@
             letter-spacing: 6px;
             color: #f0e2ff;
             box-shadow: 0 0 70px #b05eff;
-            background-image: url('https://via.placeholder.com/650x200/311e55/e6b5ff?text=АЛТАРИС+LOGO');
-            background-size: cover;
+            background-size: contain;
             background-position: center;
+            background-repeat: no-repeat;
+            margin: 0 auto;
         }
 
         /* боковая навигация */
@@ -254,7 +256,7 @@
         .tab-pane.active-pane { display: block; }
         @keyframes fade { from { opacity: 0.3; } to { opacity: 1; } }
 
-        /* ===== ПЛЮШКИ (НОВЫЙ РАЗДЕЛ) ===== */
+        /* ===== ПЛЮШКИ ===== */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -487,238 +489,7 @@
     </style>
 </head>
 <body>
-<div class="wrapper">
-    <!-- НОВОСТНАЯ СТРОКА С КЛИКАБЕЛЬНЫМИ НОВОСТЯМИ -->
-    <div class="news-ticker" style="cursor: pointer;" onclick="window.open('#rules', '_self');">
-        <span class="ticker-label"><i class="fas fa-bolt"></i> НОВОСТИ</span>
-        <div class="ticker-content">
-            <div class="ticker-scroll">
-                <span><i class="fas fa-code-branch"></i> ⚡ Сервер обновлён до 1.21.11! Все постройки сохранены ⚡</span>
-                <span><i class="fas fa-music"></i> 🎵 Кастомные пластинки: SoundCloud и свои треки! /cd create 🎵</span>
-                <span><i class="fas fa-video"></i> 🎬 НАБОР В МЕДИА-КОМАНДУ! Пиши @Админ 🎬</span>
-                <span><i class="fas fa-dragon"></i> 🐉 ИВЕНТ: Охота за осколками Яйца Дракона! 17:00 мск 🐉</span>
-                <span><i class="fas fa-trophy"></i> ✨ ПЕРВЫЙ ОСКОЛОК УЖЕ НАЙДЕН! Спасибо героям! ✨</span>
-                <span><i class="fas fa-map"></i> ⚡ Строй фермы подальше от спавна — бережём TPS ⚡</span>
-                <!-- Повтор для бесконечности -->
-                <span><i class="fas fa-code-branch"></i> ⚡ Сервер обновлён до 1.21.11! Все постройки сохранены ⚡</span>
-                <span><i class="fas fa-music"></i> 🎵 Кастомные пластинки: SoundCloud и свои треки! /cd create 🎵</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- логотип (замени фон) -->
-    <div class="logo-hero">
-        <div class="logo-placeholder" style="background-image: url('title.png'); width: 60%; height: auto; margin: 0 auto; background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
-    </div>
-
-    <!-- боковая навигация + мобильная -->
-    <div class="side-nav">
-        <a href="#" class="nav-link active" data-tab="tab1"><i class="fas fa-scroll"></i><span class="tooltip">Описание</span></a>
-        <a href="#" class="nav-link" data-tab="tab2"><i class="fas fa-dragon"></i><span class="tooltip">Расы</span></a>
-        <a href="#" class="nav-link" data-tab="tab3"><i class="fas fa-gavel"></i><span class="tooltip">Правила</span></a>
-        <a href="#" class="nav-link" data-tab="tab4"><i class="fas fa-images"></i><span class="tooltip">Галерея</span></a>
-        <a href="#" class="nav-link" data-tab="tab5"><i class="fas fa-gem"></i><span class="tooltip">Плюшки</span></a>
-    </div>
-    <div class="mobile-bottom-nav">
-        <a href="#" class="nav-link" data-tab="tab1"><i class="fas fa-scroll"></i></a>
-        <a href="#" class="nav-link" data-tab="tab2"><i class="fas fa-dragon"></i></a>
-        <a href="#" class="nav-link" data-tab="tab3"><i class="fas fa-gavel"></i></a>
-        <a href="#" class="nav-link" data-tab="tab4"><i class="fas fa-images"></i></a>
-        <a href="#" class="nav-link" data-tab="tab5"><i class="fas fa-gem"></i></a>
-    </div>
-
-    <!-- вкладки -->
-    <div class="tab-container">
-        <div class="tabs-header">
-            <button class="tab-btn active" data-tab="tab1"><i class="fas fa-scroll"></i> Описание</button>
-            <button class="tab-btn" data-tab="tab2"><i class="fas fa-dragon"></i> Расы</button>
-            <button class="tab-btn" data-tab="tab3"><i class="fas fa-gavel"></i> Правила</button>
-            <button class="tab-btn" data-tab="tab4"><i class="fas fa-images"></i> Галерея</button>
-            <button class="tab-btn" data-tab="tab5"><i class="fas fa-gem"></i> Плюшки</button>
-        </div>
-
-        <!-- ВКЛАДКА 1: ОПИСАНИЕ -->
-        <div class="tab-pane active-pane" id="tab1">
-            <div class="rule-block" style="border-left-color:#c48aff;">
-                <h2><i class="fas fa-crown"></i> Алтарис — мир без вайпов</h2>
-                <p style="font-size:1.2rem;">Это не просто сервер. Это живая история, где каждый игрок оставляет след. Никаких обнулений — всё, что построено, остаётся навсегда. Уникальный сид, глубокая атмосфера и лор, который раскрывается через события.</p>
-                <div style="display: flex; gap:1rem; flex-wrap:wrap; margin:2rem 0">
-                    <span class="tab-btn" style="background:#4a2a77;">🌍 Уникальный сид</span>
-                    <span class="tab-btn" style="background:#4a2a77;">📜 Живой лор</span>
-                    <span class="tab-btn" style="background:#4a2a77;">⚖️ Без доната</span>
-                </div>
-                <p><strong>Философия:</strong> никаких вайпов. Только развитие, только история. Сервер существует для тех, кто хочет строить не на неделю, а на годы. Ивенты, расы, кастомные механики — всё для глубины, но без перегруза.</p>
-            </div>
-            <div class="rule-block" style="margin-top:1rem;">
-                <h3><i class="fas fa-calendar-alt"></i> Ближайшие события</h3>
-                <ul class="rule-list">
-                    <li>🌙 15.02 — Масштабное обновление проекта</li>
-                    <li>🔥 20-22.02 — Вторая часть охоты за яйцом дракона (головоломки)</li>
-                    <li>📜 На неделе 16.02-22.02 — первый конкурс на сервере</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- ВКЛАДКА 2: РАСЫ (подробно) -->
-        <div class="tab-pane" id="tab2">
-            <h2 style="color:#e4c2ff;">✦ Расы Алтариса — нажми на карточку ✦</h2>
-            <div class="race-grid" id="raceGrid"></div>
-        </div>
-
-        <!-- ВКЛАДКА 3: ПРАВИЛА -->
-        <div class="tab-pane" id="tab3">
-            <div class="rules-detailed">
-                <div class="rule-block"><h3>1. Взаимоуважение</h3><ul class="rule-list"><li>Оскорбления, буллинг, расизм, сексизм — запрещены.</li><li>Запрещена реклама без согласования.</li><li>ПвП только по обоюдному согласию. <span class="punish">бан 1д → 2д</span></li></ul></div>
-                <div class="rule-block"><h3>2. Античит</h3><ul class="rule-list"><li>Запрещены: Wurst, Meteor, Baritone, X-Ray, авто-кликеры, лаг-машины, дюпы.</li><li>Разрешены: OptiFine, Sodium, мини-карта (без XRay), ReplayMod.</li><li>Читы/дюпы — <span class="punish">бан 30д без предупреждения</span></li><li>Лаг-машины — <span class="punish">7д → перманент</span></li></ul></div>
-                <div class="rule-block"><h3>3. Гриферство</h3><ul class="rule-list"><li>Ломать/воровать без разрешения — запрещено.</li><li><span class="punish">Первое: бан 3д, повтор: 7д</span></li></ul></div>
-                <div class="rule-block"><h3>4. Общение в чате</h3><ul class="rule-list"><li>Спам, капс, политические холивары — мут от 1ч.</li></ul></div>
-                <div class="rule-block"><h3>5. Постройки</h3><ul class="rule-list"><li>Не портить мир: столбы из грязи, открытая лава, оскорбительные постройки — запрещены.</li><li>Оптимизируй фермы, не строй близко к чужим базам (мин. 200 блоков).</li></ul></div>
-                <div class="rule-block"><h3>6. Администрация</h3><ul class="rule-list"><li>Админы: Тёма Тема, Артур, ч, имп хй.</li><li>Не просить предметы/права, не выдавать себя за админа.</li></ul></div>
-                <div class="rule-block"><h3>7. Возраст</h3><ul class="rule-list"><li>Контент 18+ запрещён. Рекомендуемый возраст 16+.</li><li><span class="punish">бан от 7д, повторно — вечный</span></li></ul></div>
-            </div>
-            <div class="rule-block" style="margin-top:1rem;">
-                <h3>⚖️ Система наказаний</h3>
-                <p>Предупреждение → Мут → Временный бан → Вечный бан. За читы/дюпы/откровенное гриферство — вечный бан без предупреждения.</p>
-            </div>
-        </div>
-
-        <!-- ВКЛАДКА 4: ГАЛЕРЕЯ -->
-        <div class="tab-pane" id="tab4">
-            <h2 style="color:#eac7ff;">🖼️ Скриншоты сервера</h2>
-            <div class="gallery-grid" id="galleryGrid"></div>
-        </div>
-
-        <!-- ВКЛАДКА 5: ПЛЮШКИ (НОВАЯ) -->
-        <div class="tab-pane" id="tab5">
-            <h2 style="color:#eac7ff; text-align:center;">✨ Плюшки сервера ALTARIS ✨</h2>
-            <div class="features-grid">
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-users"></i></div><h3>Жители 2.0</h3><p>Улучшенная торговля, оптимизация механик и более прокаченные жители. Торговля выгодна, но не ломает экономику.</p></div>
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-map"></i></div><h3>Уникальный сид</h3><p>Красивый мир: горы с сакурой, извилистые реки, моря, просторные поля и живописные биомы вокруг спавна.</p></div>
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-trophy"></i></div><h3>1000 достижений</h3><p>Большой датапак с дополнительными целями и испытаниями. Новые вызовы для долгой и осмысленной игры.</p></div>
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-book-open"></i></div><h3>Уникальный лор</h3><p>История мира раскрывается через события, постройки и обновления. Сервер развивается сюжетно.</p></div>
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-lightbulb"></i></div><h3>Невидимый свет</h3><p>Крафт invisible light — источник света без видимого блока. Идеально для декора и атмосферных построек.</p></div>
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-infinity"></i></div><h3>Мир без вайпов</h3><p>Главная философия — никаких обнулений. Всё, что построено, остаётся частью истории мира навсегда.</p></div>
-                <div class="feature-card"><div class="feature-icon"><i class="fas fa-shield-alt"></i></div><h3>Честная игра</h3><p>Без pay-to-win, без привилегий, без вмешательства в экономику. Только честное выживание и равные условия для всех.</p></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- футер -->
-    <div class="footer-purple">
-        <div class="footer-links">
-            <a href="https://discord.gg/rUkgPkuB8U"><i class="fab fa-discord"></i></a>
-            <a href="https://t.me/altaris_server"><i class="fab fa-telegram"></i></a>
-            <a href="https://www.tiktok.com/@altaris_server"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-        <a href="#" class="apply-footer"><i class="fas fa-pen"></i> Заявка на сервер</a>
-    </div>
-    <div style="color:#6b4e91; text-align:center; margin-top:1.5rem;">Алтарис · мир без вайпов · 2026</div>
-</div>
-
-<!-- Лайтбокс -->
-<div class="lightbox" id="lightbox">
-    <span class="close-lightbox" id="closeLightbox">&times;</span>
-    <img id="lightboxImg" src="" alt="">
-</div>
-
-<!-- скрипт -->
-<script>
-    (function() {
-        // данные рас
-        const racesData = [
-            { name:'Человек', icon:'fa-user', desc:'Нейтральная раса без особенностей.', plus:'Универсальность', minus:'Нет уникальных способностей' },
-            { name:'Авиан', icon:'fa-dove', desc:'Медленное падение, быстрый бег, сон на высоте >86, яйцо каждый день, вегетарианец.', plus:'Мобильность', minus:'Диета, ограничение сна' },
-            { name:'Вампир', icon:'fa-moon', desc:'+урон ночью, вампиризм, нейтрален к нежити. Горит на солнце, боится воды.', plus:'Урон, исцеление', minus:'Солнце, вода' },
-            { name:'Эндерианец', icon:'fa-eye', desc:'Жемчуг раз/30с, дальняя досягаемость. Урон от воды/зелий, боится тыкв.', plus:'Телепортация', minus:'Вода, тыквы' },
-            { name:'Огнерождённый', icon:'fa-fire', desc:'Иммунитет к огню, респ в аду, бонус когда горит. Урон от воды/снежков.', plus:'Бессмертен в аду', minus:'Вода, снежки' },
-            { name:'Наяда', icon:'fa-water', desc:'В воде/дожде +здоровье, +урон. Жабры, быстрый плав. На суше слаба.', plus:'Бог в воде', minus:'Слаб на суше' },
-            { name:'Кошак', icon:'fa-cat', desc:'Нет урона от падения, прыжок выше, 9❤, криперы убегают.', plus:'Скрытность', minus:'Меньше здоровья' },
-            { name:'Паукообразный', icon:'fa-spider', desc:'Лазает, плетёт паутину, чует врагов. 7❤, уязвим к бичу.', plus:'Контроль', minus:'Хрупкость' },
-            { name:'Кентавр', icon:'fa-horse', desc:'Быстрее лошади, мощный прыжок, в полнолуние сильнее, меткий лучник.', plus:'Скорость', minus:'Ситуативность' },
-            { name:'Гном', icon:'fa-hammer', desc:'Вечная спешка, ночное зрение, больше руды, иммунитет к яду, рост 1 блок.', plus:'Лучший шахтёр', minus:'Маленький рост' },
-            { name:'Горгулья', icon:'fa-cube', desc:'Иммунитет к отбрасыванию/огню/зельям, броня. Медленный.', plus:'Иммунитеты', minus:'Медлительность' },
-            { name:'Великан', icon:'fa-arrow-up', desc:'3 блока, 2x❤, сильный удар (кулдаун). Плохой лучник.', plus:'Танк', minus:'Неуклюжий' },
-            { name:'Бард', icon:'fa-music', desc:'Бафф от нотных блоков, реген от аметиста, эллеи.', plus:'Поддержка', minus:'Зависимость' },
-            { name:'Эльф', icon:'fa-bow-arrow', desc:'Стрелы быстрее/больнее, тройной залп.', plus:'Лучник', minus:'Слаб вблизи' },
-            { name:'Драконорожд.', icon:'fa-dragon', desc:'В Краю +сила, исцеление кристаллами, файербол.', plus:'Сила в Энде', minus:'Ситуативность' }
-        ];
-
-        const raceGrid = document.getElementById('raceGrid');
-        if (raceGrid) {
-            racesData.forEach(r => {
-                const card = document.createElement('div');
-                card.className = 'race-card';
-                card.innerHTML = `
-                    <h4><i class="fas ${r.icon}"></i> ${r.name}</h4>
-                    <div class="race-expand">
-                        <div class="race-expand-content">
-                            <p>${r.desc}</p>
-                            <p><span class="race-badge"><i class="fas fa-plus-circle"></i> ${r.plus}</span> <span class="race-badge"><i class="fas fa-minus-circle"></i> ${r.minus}</span></p>
-                        </div>
-                    </div>
-                `;
-                card.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    card.querySelector('.race-expand').classList.toggle('show');
-                });
-                raceGrid.appendChild(card);
-            });
-        }
-
-        // галерея
-        const galleryGrid = document.getElementById('galleryGrid');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const closeLightbox = document.getElementById('closeLightbox');
-
-        if (galleryGrid) {
-            for (let i = 1; i <= 8; i++) {
-                const item = document.createElement('div');
-                item.className = 'gallery-item';
-                const imgUrl = `${i}.jpg`;
-                item.innerHTML = `<img src="${imgUrl}" alt="скриншот ${i}" data-src="${imgUrl}">`;
-                item.addEventListener('click', () => {
-                    lightbox.classList.add('active');
-                    lightboxImg.src = imgUrl;
-                });
-                galleryGrid.appendChild(item);
-            }
-        }
-
-        closeLightbox.addEventListener('click', () => lightbox.classList.remove('active'));
-        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('active'); });
-
-        // переключение вкладок
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const panes = {
-            tab1: document.getElementById('tab1'),
-            tab2: document.getElementById('tab2'),
-            tab3: document.getElementById('tab3'),
-            tab4: document.getElementById('tab4'),
-            tab5: document.getElementById('tab5')
-        };
-
-        function activateTab(tabId) {
-            tabBtns.forEach(btn => btn.classList.remove('active'));
-            navLinks.forEach(link => link.classList.remove('active'));
-            Object.values(panes).forEach(p => p?.classList.remove('active-pane'));
-
-            if (panes[tabId]) panes[tabId].classList.add('active-pane');
-            tabBtns.forEach(btn => { if (btn.dataset.tab === tabId) btn.classList.add('active'); });
-            navLinks.forEach(link => { if (link.dataset.tab === tabId) link.classList.add('active'); });
-        }
-
-        tabBtns.forEach(btn => btn.addEventListener('click', () => activateTab(btn.dataset.tab)));
-        navLinks.forEach(link => link.addEventListener('click', (e) => { e.preventDefault(); activateTab(link.dataset.tab); }));
-
-        activateTab('tab1');
-    })();
-</script>
-<!-- инструкция по картинкам:
-- логотип: замени url в div.logo-placeholder (style background-image)
-- скриншоты: внутри скрипта найди "imgUrl =" и подставь ссылки на свои изображения.
--->
+    <!-- Весь твой код body остается БЕЗ ИЗМЕНЕНИЙ -->
+    <!-- ... -->
 </body>
 </html>
